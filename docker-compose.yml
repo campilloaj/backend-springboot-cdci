@@ -1,0 +1,13 @@
+
+
+services: 
+  spring-api-product:
+    image: spring-api-product
+    container_name: spring-api-container
+    ports:
+     - "8080:8080"
+    networks: 
+     - spring-network
+   
+networks:
+ spring-network:
